@@ -1,0 +1,38 @@
+/* CSS reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+*:focus {
+  outline: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+.only--mobile {
+  display: block; }
+  @media (min-width: 40.25em) {
+    .only--mobile {
+      display: none; } }
+
+.only--desktop {
+  display: none; }
+  @media (min-width: 40.25em) {
+    .only--desktop {
+      display: block; } }
+
+.card {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(#fff, #ffb6c1); }
+  .card--icon {
+    width: 100%;
+    height: auto;
+    margin: 3rem 0 3rem 2rem; }
